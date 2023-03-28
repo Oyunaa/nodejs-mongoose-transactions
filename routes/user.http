@@ -1,0 +1,25 @@
+###
+
+POST http://localhost:9000/api/user
+Content-Type: application/json
+
+{
+  "userInf": {
+    "firstname":"Oyuk2a4@gmail.com",
+    "lastname":"qweqwe",
+    "phoneNumber": 89112324,
+    "email":"test@gmail.com"
+  },
+  "address": {
+    "country":"Mongolia",
+    "city":"UB",
+    "streetName":"Tokyo",
+    "buildingNumber":"356",
+    "doorNumber":"2"
+  }
+}
+
+###
+
+GET http://localhost:9000/api/user
+
