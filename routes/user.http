@@ -4,11 +4,11 @@ POST http://localhost:9000/api/user
 Content-Type: application/json
 
 {
-  "userInf": {
+  "userInfo": {
     "firstname":"Oyuk2a4@gmail.com",
     "lastname":"qweqwe",
-    "phoneNumber": 89112324,
-    "email":"test@gmail.com"
+    "phoneNumber": 89212324,
+    "emal":"test@gmail.com"
   },
   "address": {
     "country":"Mongolia",
