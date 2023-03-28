@@ -9,9 +9,6 @@ exports.register = async (req, res) => {
   try {
     const session = await conn.startSession();
 
-    // await session.withTransaction(async () => {
-
-    // });
     const user = await userModel.create([userInfo], { session });
     console.log(user);
     const shipping = await shippingModel.create(

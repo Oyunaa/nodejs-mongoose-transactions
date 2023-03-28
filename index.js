@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
 const userRoutes = require("./routes/user.routes");
+const shipRoutes = require("./routes/shipping.routes");
 
 const app = express();
 
@@ -18,6 +18,7 @@ app.use(express.json());
 // const session = db.startSession();
 
 app.use("/api", userRoutes);
+app.use("/api", shipRoutes);
 
 app.get("/api", (req, res) => {
   res.json({ message: "Success" });

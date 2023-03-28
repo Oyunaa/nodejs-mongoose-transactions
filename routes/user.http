@@ -4,10 +4,10 @@ POST http://localhost:9000/api/user
 Content-Type: application/json
 
 {
-  "userInfo": {
+  "usernfo": {
     "firstname":"Oyuk2a4@gmail.com",
     "lastname":"qweqwe",
-    "phoneNumber": 89212324,
+    "phoneNumber": 89212425,
     "emal":"test@gmail.com"
   },
   "address": {
@@ -23,3 +23,20 @@ Content-Type: application/json
 
 GET http://localhost:9000/api/user
 
+
+
+###
+
+POST http://localhost:9000/api/shipping
+Content-Type: application/json
+
+{ 
+    "data": [{
+          "userId":"64224633d64cdbe5288b12ae",
+          "country":"Mongolia",
+          "city":"UB",
+          "streetName":"Tokyo",
+          "buildingNumber":"356",
+          "doorNumber":"2"
+        }]
+}
